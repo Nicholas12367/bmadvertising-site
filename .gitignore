@@ -1,0 +1,16 @@
+.DS_Store
+.claude/
+
+# Internal business docs - do not deploy
+*.docx
+*.pdf
+*.md
+Sales Agreement.pdf
+
+# Source images replaced by clean copies
+Brendan .png
+Image 2 sign.png
+Sign image 1 .png
+Mobile-Sign-Rentals-Oshawa-1024x768.jpg
+portable01.jpg
+Screenshot*.png

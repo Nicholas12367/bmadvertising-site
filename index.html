@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>B&amp;M Signs and Advertising, Portable Sign Rentals in Lloydminster, AB/SK</title>
+<meta name="description" content="Locally owned portable 4×8 sign rentals in Lloydminster, Alberta &amp; Saskatchewan. We handle design, permits, delivery, installation, and message changes. Contact us for a quote." />
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --midnight: #0A1628;
+    --midnight-soft: #132338;
+    --gold: #C8A46A;
+    --gold-bright: #E0BA7E;
+    --cream: #F8F4ED;
+    --cream-deep: #EFE8DB;
+    --ink: #0F0F0F;
+    --muted: #6B6B6B;
+    --line: rgba(10, 22, 40, 0.08);
+    --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.04);
+    --shadow-md: 0 8px 32px rgba(10, 22, 40, 0.08);
+    --shadow-lg: 0 24px 64px rgba(10, 22, 40, 0.14);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--midnight);
+  }
+
+  a { color: inherit; text-decoration: none; transition: all 0.3s var(--ease); }
+  img { max-width: 100%; display: block; }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  .container-narrow { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+
+  @media (max-width: 600px) {
+    .container, .container-narrow { padding: 0 20px; }
+  }
+
+  /* NAV */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 14px 0;
+    background: rgba(248, 244, 237, 0.96);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border-bottom: 1px solid rgba(10, 22, 40, 0.06);
+    box-shadow: 0 1px 0 rgba(10,22,40,0.02), 0 8px 24px rgba(10,22,40,0.04);
+    transition: all 0.3s var(--ease);
+  }
+
+  .nav.scrolled {
+    padding: 10px 0;
+    background: rgba(248, 244, 237, 0.98);
+    box-shadow: 0 1px 0 rgba(10,22,40,0.04), 0 12px 32px rgba(10,22,40,0.06);
+  }
+
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    color: var(--midnight);
+    flex-shrink: 0;
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .brand-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .brand-name .top {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--midnight);
+  }
+
+  .brand-name .bottom {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .brand-logo { width: 44px; height: 44px; }
+    .brand-name .top { font-size: 17px; }
+    .brand-name .bottom { font-size: 9px; letter-spacing: 0.14em; }
+  }
+
+  .nav-links { display: flex; gap: 36px; align-items: center; }
+
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--midnight);
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s var(--ease);
+  }
+
+  .nav-links a:hover::after { width: 100%; }
+
+  /* Nav button label visibility fix */
+  .nav-links a.btn { color: inherit; }
+  .nav-links a.btn-primary { color: var(--cream); }
+  .nav-links a.btn-gold { color: var(--midnight); }
+  .nav-links a.btn-outline { color: var(--midnight); }
+  .nav-links a.btn::after { display: none; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: all 0.3s var(--ease);
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    min-height: 44px;
+  }
+
+  .btn-primary { background: var(--midnight); color: var(--cream); }
+  .btn-primary:hover { background: var(--ink); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+  .btn-outline { background: transparent; color: var(--midnight); border: 1px solid var(--midnight); }
+  .btn-outline:hover { background: var(--midnight); color: var(--cream); }
+  .btn-gold { background: var(--gold); color: var(--midnight); }
+  .btn-gold:hover { background: var(--gold-bright); transform: translateY(-1px); }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 160px 0 80px;
+    overflow: hidden;
+    background: var(--midnight);
+    color: var(--cream);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 700px 500px at 22% 38%, rgba(200, 164, 106, 0.22), transparent 70%),
+      radial-gradient(ellipse 600px 600px at 82% 78%, rgba(200, 164, 106, 0.10), transparent 65%),
+      linear-gradient(180deg, #0A1628 0%, #132338 55%, #050d1a 100%);
+    z-index: 0;
+  }
+
+  .hero-bg::before, .hero-bg::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .hero-bg::before {
+    width: 360px; height: 360px;
+    background: radial-gradient(circle, rgba(200, 164, 106, 0.35), transparent 70%);
+    top: 12%; left: 8%;
+    animation: floatA 14s ease-in-out infinite alternate;
+  }
+
+  .hero-bg::after {
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(200, 164, 106, 0.20), transparent 70%);
+    bottom: 8%; right: 6%;
+    animation: floatB 18s ease-in-out infinite alternate;
+  }
+
+  @keyframes floatA {
+    0%   { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(30px, 24px) scale(1.08); }
+  }
+
+  @keyframes floatB {
+    0%   { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-26px, -20px) scale(1.1); }
+  }
+
+  .hero-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .hero { padding: 130px 0 60px; min-height: auto; }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 6.5vw, 88px);
+    font-weight: 300;
+    margin-bottom: 28px;
+    color: var(--cream);
+    text-shadow: 0 2px 24px rgba(0,0,0,0.4);
+  }
+
+  .hero h1 em { font-style: italic; font-weight: 400; color: var(--gold); }
+
+  .hero-sub {
+    font-size: clamp(16px, 1.6vw, 19px);
+    line-height: 1.6;
+    color: rgba(248, 244, 237, 0.88);
+    max-width: 540px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+
+  @media (max-width: 480px) {
+    .hero-ctas { gap: 10px; }
+    .hero-ctas .btn { width: 100%; }
+  }
+
+  .hero .btn-outline { color: var(--cream); border-color: var(--cream); }
+  .hero .btn-outline:hover { background: var(--cream); color: var(--midnight); }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(248, 244, 237, 0.15);
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .hero-stats { gap: 28px; }
+  }
+
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--cream);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .stat-label { font-size: 13px; color: rgba(248, 244, 237, 0.6); margin-top: 6px; }
+
+  .hero-visual {
+    position: relative;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 900px) { .hero-visual { height: 380px; } }
+  @media (max-width: 480px) { .hero-visual { height: 280px; } }
+
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 16px 32px rgba(0,0,0,0.3);
+    position: relative;
+    background: var(--midnight-soft);
+  }
+
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: slowZoom 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.06); }
+  }
+
+  .hero-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(10,22,40,0.35) 100%);
+  }
+
+  .hero-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(248, 244, 237, 0.98);
+    color: var(--midnight);
+    padding: 14px 18px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2); }
+    50%      { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.1); }
+  }
+
+  /* MARQUEE */
+  .marquee {
+    background: var(--midnight);
+    color: var(--cream);
+    padding: 24px 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 80px;
+    animation: scroll 40s linear infinite;
+    white-space: nowrap;
+    font-family: 'Fraunces', serif;
+    font-size: clamp(18px, 2.2vw, 24px);
+    font-weight: 300;
+  }
+
+  .marquee-track span { display: inline-flex; align-items: center; gap: 80px; }
+  .marquee-track span::after { content: '✦'; color: var(--gold); }
+
+  @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* SECTION BASE */
+  section { padding: 120px 0; }
+  @media (max-width: 768px) { section { padding: 72px 0; } }
+  @media (max-width: 480px) { section { padding: 56px 0; } }
+
+  .section-head {
+    max-width: 720px;
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .section-head { margin-bottom: 44px; }
+  }
+
+  .section-head h2 {
+    font-size: clamp(32px, 5vw, 60px);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .section-head h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+
+  .section-head p { font-size: clamp(15px, 1.6vw, 18px); color: var(--muted); line-height: 1.6; }
+
+  /* ABOUT */
+  .about { background: var(--cream); position: relative; }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+  .about-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a3a5c 0%, var(--midnight) 100%);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .about-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(10,22,40,0.7) 100%);
+  }
+
+  .about-visual .lloyd-badge {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 96px;
+    height: 96px;
+    border: 1px solid rgba(200, 164, 106, 0.5);
+    background: rgba(10, 22, 40, 0.55);
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--gold);
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    font-weight: 500;
+    z-index: 3;
+  }
+
+  .lloyd-badge strong {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 2px 0;
+    line-height: 1;
+  }
+
+  .about-tagline {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    color: var(--cream);
+    z-index: 2;
+    font-family: 'Fraunces', serif;
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+
+  .about-tagline .stamp {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 12px;
+  }
+
+  .about-body h2 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  .about-body h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+
+  .about-body p {
+    font-size: clamp(15px, 1.6vw, 17px);
+    color: var(--midnight);
+    margin-bottom: 18px;
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  .about-signature {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-signature .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--cream-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+  }
+
+  .about-signature .avatar img { width: 80%; height: 80%; object-fit: contain; }
+
+  .about-signature .name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--midnight);
+  }
+
+  .about-signature .role {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* SERVICES */
+  .services { background: var(--cream-deep); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px)  { .services-grid { grid-template-columns: 1fr; gap: 16px; } }
+
+  .service-card {
+    background: var(--cream);
+    padding: 36px 28px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    transition: all 0.4s var(--ease);
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) { .service-card { min-height: 0; padding: 28px 24px; } }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--gold);
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--midnight);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .service-card h3 { font-size: 22px; font-weight: 500; margin-bottom: 14px; }
+  .service-card p  { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+  /* PROCESS */
+  .process {
+    background: var(--midnight);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.3;
+  }
+
+  .process .section-head h2 { color: var(--cream); }
+  .process .section-head p  { color: rgba(248, 244, 237, 0.7); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  @media (max-width: 900px) { .process-steps { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
+  @media (max-width: 500px) { .process-steps { grid-template-columns: 1fr; gap: 20px; } }
+
+  .process-step { padding: 32px 0; }
+  @media (max-width: 500px) { .process-step { padding: 0; } }
+
+  .step-num {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(72px, 9vw, 96px);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold);
+    line-height: 1;
+    opacity: 0.9;
+    margin-bottom: 20px;
+  }
+
+  .process-step h3 { font-size: 22px; font-weight: 500; color: var(--cream); margin-bottom: 14px; }
+  .process-step p  { font-size: 15px; color: rgba(248, 244, 237, 0.65); line-height: 1.6; }
+
+  /* PLANS */
+  .plans { background: var(--cream); }
+
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+
+  @media (max-width: 900px) { .plans-grid { grid-template-columns: 1fr; max-width: 520px; gap: 20px; } }
+
+  .plan-card {
+    padding: 40px 32px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    position: relative;
+    transition: all 0.4s var(--ease);
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) { .plan-card { padding: 32px 24px; } }
+
+  .plan-card.featured {
+    background: var(--midnight);
+    color: var(--cream);
+    transform: scale(1.04);
+    box-shadow: var(--shadow-lg);
+    z-index: 2;
+  }
+
+  @media (max-width: 900px) { .plan-card.featured { transform: none; } }
+
+  .plan-card:hover:not(.featured) { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+
+  .plan-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: var(--gold);
+    color: var(--midnight);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .plan-card h3 { font-size: 26px; font-weight: 500; margin-bottom: 8px; color: inherit; }
+  .plan-card.featured h3 { color: var(--cream); }
+
+  .plan-card .plan-sub { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+  .plan-card.featured .plan-sub { color: rgba(248, 244, 237, 0.65); }
+
+  .plan-divider {
+    height: 1px;
+    background: var(--line);
+    margin-bottom: 24px;
+  }
+
+  .plan-card.featured .plan-divider { background: rgba(248, 244, 237, 0.15); }
+
+  .plan-features { list-style: none; margin-bottom: 28px; flex: 1; }
+
+  .plan-features li {
+    padding: 10px 0;
+    font-size: 15px;
+    color: var(--midnight);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .plan-card.featured .plan-features li { color: rgba(248, 244, 237, 0.85); }
+
+  .plan-features li::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+    margin-top: 3px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8l2.5 2.5L12 5' fill='none' stroke='%230A1628' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+  }
+
+  .plan-card .btn { width: 100%; justify-content: center; }
+
+  .plans-note {
+    max-width: 760px;
+    margin: 56px auto 0;
+    padding: 32px 36px;
+    background: var(--cream-deep);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    text-align: center;
+  }
+
+  @media (max-width: 600px) { .plans-note { padding: 24px 22px; } }
+
+  .plans-note h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--midnight);
+  }
+
+  .plans-note p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* GALLERY */
+  .gallery { background: var(--cream-deep); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 16px;
+  }
+
+  @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 240px; } }
+  @media (max-width: 500px) { .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; } }
+
+  .gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s var(--ease);
+    background: var(--midnight);
+  }
+
+  .gallery-item:hover { transform: scale(1.02); box-shadow: var(--shadow-lg); }
+
+  .gallery-item.tall { grid-row: span 2; }
+  .gallery-item.wide { grid-column: span 2; }
+
+  @media (max-width: 900px) { .gallery-item.tall, .gallery-item.wide { grid-row: auto; grid-column: auto; } }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease);
+  }
+
+  .gallery-item:hover img { transform: scale(1.05); }
+
+  .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, transparent 0%, rgba(10, 22, 40, 0.92) 100%);
+    color: var(--cream);
+    z-index: 2;
+  }
+
+  .gallery-overlay .cat {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .gallery-overlay .name {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  /* FAQ */
+  .faq { background: var(--cream); }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 800px) { .faq-grid { grid-template-columns: 1fr; gap: 0; } }
+
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+    cursor: pointer;
+  }
+
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: 'Fraunces', serif;
+    font-size: clamp(17px, 1.8vw, 19px);
+    font-weight: 400;
+    color: var(--midnight);
+    line-height: 1.3;
+  }
+
+  .faq-toggle {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--midnight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s var(--ease);
+    margin-top: 2px;
+  }
+
+  .faq-item.open .faq-toggle {
+    background: var(--midnight);
+    color: var(--gold);
+    transform: rotate(45deg);
+  }
+
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease), padding 0.3s var(--ease);
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .faq-item.open .faq-a { max-height: 400px; padding-top: 14px; }
+
+  /* CTA */
+  .cta-band {
+    background: var(--midnight);
+    color: var(--cream);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 600px) { .cta-band { padding: 72px 0; } }
+
+  .cta-band::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200, 164, 106, 0.15) 0%, transparent 70%);
+  }
+
+  .cta-inner { text-align: center; max-width: 760px; margin: 0 auto; position: relative; z-index: 2; }
+
+  .cta-inner h2 {
+    font-size: clamp(32px, 6vw, 64px);
+    color: var(--cream);
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+
+  .cta-inner h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+
+  .cta-inner p { font-size: clamp(15px, 1.7vw, 18px); color: rgba(248, 244, 237, 0.75); margin-bottom: 36px; }
+
+  .cta-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  @media (max-width: 480px) {
+    .cta-ctas .btn { width: 100%; }
+  }
+
+  .cta-band .btn-outline { color: var(--cream); border-color: var(--cream); }
+  .cta-band .btn-outline:hover { background: var(--cream); color: var(--midnight); }
+
+  /* CONTACT */
+  .contact { background: var(--cream); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  .contact-info h2 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .contact-info h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+
+  .contact-info > p {
+    font-size: clamp(15px, 1.7vw, 17px);
+    color: var(--muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .contact-detail {
+    display: flex;
+    gap: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+  }
+
+  .contact-detail:last-of-type { border-bottom: none; }
+
+  .contact-detail a { color: inherit; }
+  .contact-detail a:hover { color: var(--gold); }
+
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--midnight);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-detail .label {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .contact-detail .value {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(17px, 1.8vw, 20px);
+    color: var(--midnight);
+    font-weight: 500;
+    word-break: break-word;
+  }
+
+  .contact-form {
+    background: var(--cream-deep);
+    padding: 44px;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 600px) { .contact-form { padding: 28px 22px; } }
+
+  .contact-form h3 { font-size: 26px; font-weight: 500; margin-bottom: 8px; }
+  .contact-form > p { font-size: 15px; color: var(--muted); margin-bottom: 28px; }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; gap: 0; margin-bottom: 0; } }
+
+  .form-field { position: relative; margin-bottom: 14px; }
+
+  .form-field label {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    font-size: 14px;
+    color: var(--muted);
+    pointer-events: none;
+    transition: all 0.2s var(--ease);
+    background: var(--cream-deep);
+    padding: 0 4px;
+  }
+
+  .form-field input,
+  .form-field textarea,
+  .form-field select {
+    width: 100%;
+    padding: 18px 16px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--cream);
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--midnight);
+    transition: all 0.2s var(--ease);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .form-field input:focus,
+  .form-field textarea:focus,
+  .form-field select:focus { outline: none; border-color: var(--midnight); }
+
+  .form-field input:focus + label,
+  .form-field input:not(:placeholder-shown) + label,
+  .form-field textarea:focus + label,
+  .form-field textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 11px;
+    color: var(--midnight);
+    letter-spacing: 0.05em;
+  }
+
+  .form-field input::placeholder,
+  .form-field textarea::placeholder { color: transparent; }
+
+  .form-field textarea { min-height: 120px; resize: vertical; }
+
+  .form-submit { width: 100%; justify-content: center; margin-top: 8px; }
+
+  /* FOOTER */
+  .footer {
+    background: var(--midnight);
+    color: rgba(248, 244, 237, 0.7);
+    padding: 72px 0 28px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 56px;
+  }
+
+  @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; margin-bottom: 40px; } }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--cream);
+    margin-bottom: 18px;
+  }
+
+  .footer-brand img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 4px;
+  }
+
+  .footer-brand .top {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cream);
+    line-height: 1.1;
+  }
+
+  .footer-brand .bottom {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 4px;
+  }
+
+  .footer-about { font-size: 14px; line-height: 1.6; max-width: 320px; margin-bottom: 20px; }
+
+  .footer h4 {
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer ul { list-style: none; }
+  .footer ul li { padding: 5px 0; }
+
+  .footer ul a { font-size: 14px; color: rgba(248, 244, 237, 0.7); transition: color 0.2s var(--ease); }
+  .footer ul a:hover { color: var(--gold); }
+
+  .footer-bottom {
+    padding-top: 28px;
+    border-top: 1px solid rgba(248, 244, 237, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    color: rgba(248, 244, 237, 0.5);
+  }
+
+  .footer-bottom a { color: rgba(248, 244, 237, 0.6); transition: color 0.2s var(--ease); }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  .reach-credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .reach-credit a {
+    color: var(--gold) !important;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s var(--ease);
+  }
+
+  .reach-credit a:hover { border-bottom-color: var(--gold); }
+
+  /* REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+  }
+
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* MOBILE NAV */
+  .menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .menu-toggle span {
+    width: 22px;
+    height: 1.5px;
+    background: var(--midnight);
+    transition: all 0.3s var(--ease);
+  }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: var(--cream);
+      padding: 28px;
+      gap: 18px;
+      box-shadow: var(--shadow-md);
+      border-top: 1px solid var(--line);
+      align-items: stretch;
+    }
+    .nav-links.open a { padding: 8px 0; }
+    .nav-links.open .btn { width: 100%; }
+    .menu-toggle { display: flex; }
+  }
+
+  /* CHATBOT */
+  .chat-launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--midnight);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(10, 22, 40, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+    transition: all 0.3s var(--ease);
+  }
+
+  .chat-launcher:hover { transform: scale(1.08); box-shadow: 0 12px 32px rgba(10, 22, 40, 0.4); }
+  .chat-launcher.hidden { transform: scale(0); opacity: 0; pointer-events: none; }
+
+  .chat-launcher .ping {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #4ade80;
+    border: 2px solid var(--midnight);
+  }
+
+  .chat-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 380px;
+    max-width: calc(100vw - 32px);
+    height: 560px;
+    max-height: calc(100vh - 40px);
+    background: var(--cream);
+    border-radius: 16px;
+    box-shadow: 0 24px 64px rgba(10, 22, 40, 0.25);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 91;
+    border: 1px solid var(--line);
+  }
+
+  @media (max-width: 480px) {
+    .chat-window {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100dvh;
+      max-height: 100dvh;
+      border-radius: 0;
+    }
+  }
+
+  .chat-window.open { display: flex; animation: chatIn 0.3s var(--ease); }
+
+  @keyframes chatIn {
+    from { opacity: 0; transform: translateY(16px) scale(0.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .chat-header {
+    background: var(--midnight);
+    color: var(--cream);
+    padding: 18px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .chat-header .chat-logo {
+    width: 36px;
+    height: 36px;
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 3px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .chat-header-info { flex: 1; min-width: 0; }
+
+  .chat-header-info .name {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cream);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .chat-header-info .status {
+    font-size: 11px;
+    color: rgba(248, 244, 237, 0.7);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.03em;
+  }
+
+  .chat-header-info .status .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+  }
+
+  .chat-close {
+    background: rgba(255,255,255,0.1);
+    color: var(--cream);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s var(--ease);
+    flex-shrink: 0;
+  }
+
+  .chat-close:hover { background: rgba(255,255,255,0.2); }
+
+  .chat-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: var(--cream-deep);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chat-msg {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    animation: msgIn 0.3s var(--ease);
+  }
+
+  @keyframes msgIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .chat-msg.bot {
+    background: var(--cream);
+    color: var(--midnight);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .chat-msg.user {
+    background: var(--midnight);
+    color: var(--cream);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+
+  .chat-msg strong { font-weight: 600; color: var(--midnight); }
+  .chat-msg.user strong { color: var(--gold); }
+
+  .chat-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+    padding: 0 4px;
+  }
+
+  .chat-option {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    color: var(--midnight);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s var(--ease);
+    font-family: inherit;
+  }
+
+  .chat-option:hover {
+    background: var(--midnight);
+    color: var(--cream);
+    border-color: var(--midnight);
+  }
+
+  .chat-footer {
+    padding: 12px 16px;
+    background: var(--cream);
+    border-top: 1px solid var(--line);
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .chat-footer a { color: var(--midnight); font-weight: 500; }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand" aria-label="B&amp;M Signs and Advertising, home">
+      <img src="logo.png" alt="B&amp;M Signs and Advertising" class="brand-logo" />
+      <span class="brand-name">
+        <span class="top">B&amp;M</span>
+        <span class="bottom">Signs &amp; Advertising</span>
+      </span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#plans">Plans</a>
+      <a href="#faq">Q&amp;A</a>
+      <a href="#contact" class="btn btn-primary">Get a Quote →</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Lloydminster · Alberta &amp; Saskatchewan</div>
+      <h1>Your message,<br/>seen across <em>Lloyd.</em></h1>
+      <p class="hero-sub">
+        Portable 4×8 steel frame signs, delivered and planted on your commercial property,
+        with permits, graphics, and message changes fully handled. Locally owned and
+        operated, right here in Lloydminster.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-gold">Get a Free Quote →</a>
+        <a href="tel:+17808721609" class="btn btn-outline">Call Us</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">4×8</div>
+          <div class="stat-label">Steel frame, double sided</div>
+        </div>
+        <div>
+          <div class="stat-num">Local</div>
+          <div class="stat-label">Locally owned in Lloyd</div>
+        </div>
+        <div>
+          <div class="stat-num">30 km</div>
+          <div class="stat-label">Service radius of Lloyd</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo">
+        <img src="sign2.png" alt="B&amp;M portable 4x8 sign on commercial property in Lloydminster" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Grand Openings</span>
+    <span>Real Estate</span>
+    <span>Seasonal Promotions</span>
+    <span>Hiring Campaigns</span>
+    <span>Dealership Specials</span>
+    <span>Community Events</span>
+    <span>Grand Openings</span>
+    <span>Real Estate</span>
+    <span>Seasonal Promotions</span>
+    <span>Hiring Campaigns</span>
+    <span>Dealership Specials</span>
+    <span>Community Events</span>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <img src="sign1.png" alt="B&amp;M portable 4x8 sign on a Lloydminster property" />
+      <div class="lloyd-badge">
+        <span>SERVING</span>
+        <strong>Lloyd</strong>
+        <span>AB · SK</span>
+      </div>
+      <div class="about-tagline">
+        Built for Lloyd corners.
+        <span class="stamp">Locally owned · Lloydminster</span>
+      </div>
+    </div>
+    <div class="about-body reveal">
+      <div class="eyebrow" style="color: var(--muted);">About B&amp;M</div>
+      <h2>Locally owned. <em>Professionally</em> run.</h2>
+      <p>
+        B&amp;M Signs and Advertising is a locally owned portable sign rental company
+        based right here in Lloydminster. We serve businesses, events, and organizations
+        on both the Alberta and Saskatchewan sides of the border, anywhere within a 30 km
+        radius of the city.
+      </p>
+      <p>
+        Every sign in our fleet is a double sided, powder coated steel frame 4×8 unit
+        with weighted bases for prairie wind, interchangeable letter tracks, and full
+        panel vinyl options. We handle the permit filing with the City's Development
+        Services department, the site assessment, the delivery, and the message changes,
+        so you just tell us what to say.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center;">What we do</div>
+      <h2>Everything from permit <em>to pickup.</em></h2>
+      <p>Turnkey service. The only thing you have to do is tell us the message. We handle the rest.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        </div>
+        <h3>Permit Handling</h3>
+        <p>
+          We file the temporary sign permit with the City of Lloydminster on your behalf and track it through to approval. Setback compliant placement, every time.
+        </p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3>Design &amp; Graphics</h3>
+        <p>
+          Letter track messages included with every rental. Full colour vinyl panel design and production coordinated with our local print partner when you want the premium look.
+        </p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Delivery &amp; Install</h3>
+        <p>
+          We transport, position, and ballast every sign on site, levelled, sandbagged against prairie wind, and positioned for maximum sightline from the nearest roadway.
+        </p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </div>
+        <h3>Message Changes</h3>
+        <p>
+          On site letter swaps or vinyl panel replacements as you run new promotions. Annual clients get free changes built into the contract.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center; color: var(--gold);">How it works</div>
+      <h2>Four steps. <em>No guesswork.</em></h2>
+      <p>From first call to sign on the curb, the process is designed to be effortless for you.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <h3>Tell us the message</h3>
+        <p>A quick call or form submission, what you're promoting, where your property is, and when you'd like to start.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <h3>We file &amp; design</h3>
+        <p>We submit the City permit application and prepare your message layout or vinyl graphics. Permits approve in 5 to 10 business days.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <h3>We deliver &amp; plant</h3>
+        <p>Our truck drops and levels the sign on your property within bylaw setbacks. Weighted base, sandbags, sightlines verified.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <h3>It works</h3>
+        <p>Thousands of 44th Street and Hwy 16 commuters see your message every day. We renew, change copy, or retrieve, so you focus on the business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plans" id="plans">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center;">Rental plans</div>
+      <h2>Three ways to <em>rent.</em></h2>
+      <p>Pick the term that fits your campaign. Every plan includes delivery, installation, setback compliant placement, standard letter track messages, and retrieval.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card reveal">
+        <h3>Monthly</h3>
+        <div class="plan-sub">No commitment · cancel with 7 days' notice</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Double sided 4×8 steel frame sign</li>
+          <li>Delivery and on site installation</li>
+          <li>Letter track messages and setup</li>
+          <li>Bylaw compliant placement</li>
+          <li>Flexible monthly renewal</li>
+          <li>Retrieval at end of term</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Get a Quote →</a>
+      </div>
+
+      <div class="plan-card reveal">
+        <h3>Seasonal (3 Months)</h3>
+        <div class="plan-sub">Locked in placement for 90 days</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Everything in the Monthly plan</li>
+          <li>Free message change during term</li>
+          <li>Priority scheduling on install</li>
+          <li>Locked in placement for 90 days</li>
+          <li>Best for seasonal campaigns</li>
+          <li>Roll to monthly at end of term</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Get a Quote →</a>
+      </div>
+
+      <div class="plan-card featured reveal">
+        <span class="plan-tag">Best Value</span>
+        <h3>Annual</h3>
+        <div class="plan-sub">12 month term · maximum savings</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Everything in shorter plans</li>
+          <li><strong style="color:var(--gold);">Free message changes</strong> through the year</li>
+          <li>Seasonal sign inspection &amp; upkeep</li>
+          <li>Guaranteed placement for 12 months</li>
+          <li>Priority permit renewals</li>
+          <li>First refusal on premium locations</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="plans-note reveal">
+      <h4>Need a custom quote?</h4>
+      <p>
+        Every property and campaign is different. Tell us about your business, your goals, and where you'd
+        like the sign, and we'll come back the same day with a tailored quote, including any City of
+        Lloydminster permit fees and custom graphics.
+      </p>
+      <a href="#contact" class="btn btn-primary">Request Your Quote →</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center;">Questions &amp; answers</div>
+      <h2>Good to <em>know.</em></h2>
+      <p>The things most new clients want to understand before picking up the phone.</p>
+    </div>
+    <div class="faq-grid">
+      <div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>How much does it cost?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Pricing depends on your campaign length, location, and whether you need custom vinyl graphics or just letter track messages. We keep it simple and affordable for local Lloyd businesses. <a href="#contact" style="color:var(--midnight); border-bottom:1px solid var(--gold);">Send us a quick message</a> and we'll get back to you the same day with a tailored quote.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Do I need a City permit?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Yes. Every portable sign placed within Lloydminster city limits requires a temporary sign permit from Development Services. We file it for you and manage the renewals.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What size are the signs?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">4 feet high by 8 feet wide per side, double sided, so your message is visible from both directions of traffic. Powder coated steel frame, weighted base, levelling feet, and ground clearance for winter snow.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Where can the sign be placed?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">On your commercial property, behind the required setbacks: 1.5 m from the property line, 3 m from driveways or access points, and 5 m from corner intersections. We handle the site assessment, so you don't need to measure anything.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Can I change the message mid rental?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Yes. Monthly clients can request on site changes any time, and annual clients get free message changes built into the contract. Reach out for the current change schedule.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>How fast can you install?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Standard turnaround is about 7 to 12 business days once you sign, factoring in the City's 5 to 10 day permit review. Rush options are available when the permit and sign are ready.</div>
+        </div>
+      </div>
+      <div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What areas do you serve?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Lloydminster (both Alberta and Saskatchewan sides) and surrounding communities within a 30 km radius. That includes Marshall, Lashburn, Kitscoty, Marwayne, and parts of the RM of Wilton.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What if there's a windstorm?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Every sign is ballasted with sandbags on a weighted steel base. When Environment Canada issues wind warnings above 80 km/h we proactively inspect and, if needed, temporarily lay signs down. You're never liable for weather damage to our equipment.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Do you design the graphics for me?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Absolutely. Basic letter track messages (standard black letters on white) are included. For a professional custom look we design full colour vinyl panels, coordinated with our local print vendor and built for readability at prairie highway speeds.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Can I supply my own artwork?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Yes. If you have existing brand files we'll lay them out for 4×8 vinyl and send a proof before printing. Vector PDFs or high resolution PNGs work best.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>Do you work with nonprofits?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">Yes. We offer discounted rates for registered nonprofits, churches, sports leagues, and community organizations running fundraisers or events. Just mention it when you reach out.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What if the sign gets vandalized?</span>
+            <span class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </div>
+          <div class="faq-a">We cover graffiti cleanup and incidental wear at no cost. Our rental agreement only holds you responsible for damage caused by negligence or by a third party you're responsible for on your property, which is a rare occurrence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner reveal">
+    <h2>Your message, <em>on a Lloyd corner</em> by next week.</h2>
+    <p>Tell us what you're promoting. We'll come back the same day with a site plan, a permit timeline, and a quote.</p>
+    <div class="cta-ctas">
+      <a href="#contact" class="btn btn-gold">Request a Quote →</a>
+      <a href="tel:+17808721609" class="btn btn-outline">Call (780) 872.1609</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow" style="color: var(--muted);">Get in touch</div>
+      <h2>Let's <em>start</em> a rental.</h2>
+      <p>The fastest way is the form. We reply to every inquiry within 4 business hours, usually much faster. Locally owned, Lloyd based, and always happy to talk through a project.</p>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <div class="value"><a href="tel:+17808721609">(780) 872.1609</a></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:brendankx99@yahoo.com">brendankx99@yahoo.com</a></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="label">Service Area</div>
+          <div class="value">Lloydminster, AB/SK<br/><span style="font-size:14px; color:var(--muted); font-family:Inter;">+ 30 km surrounding communities</span></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="label">Hours</div>
+          <div class="value">Mon to Fri · 8am to 6pm<br/><span style="font-size:14px; color:var(--muted); font-family:Inter;">Sat by appointment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <h3>Request a Quote</h3>
+      <p>Give us the basics, and we'll come back with a placement and a price.</p>
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" id="firstName" name="firstName" placeholder=" " autocomplete="given-name" required />
+          <label for="firstName">First name</label>
+        </div>
+        <div class="form-field">
+          <input type="text" id="lastName" name="lastName" placeholder=" " autocomplete="family-name" required />
+          <label for="lastName">Last name</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-field">
+          <input type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel" inputmode="tel" />
+          <label for="phone">Phone</label>
+        </div>
+      </div>
+      <div class="form-field">
+        <input type="text" id="company" name="company" placeholder=" " autocomplete="organization" />
+        <label for="company">Business or project name</label>
+      </div>
+      <div class="form-field">
+        <input type="text" id="location" name="location" placeholder=" " autocomplete="street-address" />
+        <label for="location">Property address or nearest intersection</label>
+      </div>
+      <div class="form-field">
+        <textarea id="message" name="message" placeholder=" " required></textarea>
+        <label for="message">Tell us about the project</label>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">Send Request →</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.png" alt="B&amp;M Signs and Advertising" />
+          <span>
+            <span class="top">B&amp;M</span><br/>
+            <span class="bottom">Signs &amp; Advertising</span>
+          </span>
+        </div>
+        <p class="footer-about">Portable 4×8 steel frame sign rentals across Lloydminster and the surrounding region. Locally owned. Bylaw compliant. Reliably seen.</p>
+        <p class="footer-about" style="color:var(--gold); font-size:12px; letter-spacing:0.15em; text-transform:uppercase;">Licensed · Insured · Locally owned in Lloyd</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Permit Handling</a></li>
+          <li><a href="#services">Design &amp; Graphics</a></li>
+          <li><a href="#services">Delivery &amp; Install</a></li>
+          <li><a href="#services">Message Changes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#faq">Q&amp;A</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17808721609">(780) 872.1609</a></li>
+          <li><a href="mailto:brendankx99@yahoo.com">brendankx99@yahoo.com</a></li>
+          <li><a href="#contact">Request a Quote</a></li>
+          <li>Lloydminster, AB/SK</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> B&amp;M Signs and Advertising · Lloydminster, Alberta / Saskatchewan</div>
+      <div class="reach-credit">
+        Website by Reach Media
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="chat-launcher" id="chatLauncher" aria-label="Open chat">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <span class="ping"></span>
+</button>
+
+<div class="chat-window" id="chatWindow" role="dialog" aria-label="B&amp;M Signs and Advertising helper">
+  <div class="chat-header">
+    <img class="chat-logo" src="logo.png" alt="B&amp;M logo" />
+    <div class="chat-header-info">
+      <div class="name">B&amp;M Signs &amp; Advertising</div>
+      <div class="status"><span class="dot"></span> Helper bot · Answers instantly</div>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-footer">Need a human? <a href="#contact" id="chatContactLink">Send us a message →</a></div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') return;
+      item.classList.toggle('open');
+    });
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = 'Sent ✓';
+    btn.style.background = 'var(--gold)';
+    btn.style.color = 'var(--midnight)';
+    setTimeout(() => {
+      e.target.reset();
+      btn.textContent = 'Send Request →';
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 2400);
+  }
+
+  const chatLauncher = document.getElementById('chatLauncher');
+  const chatWindow = document.getElementById('chatWindow');
+  const chatClose = document.getElementById('chatClose');
+  const chatBody = document.getElementById('chatBody');
+
+  const KB = {
+    welcome: {
+      text: "Hi, I'm the B&amp;M Signs &amp; Advertising helper. I can answer questions about how rentals work, permits, our service area, and how to get in touch. What would you like to know?",
+      options: ['plans', 'permit', 'area', 'size', 'process', 'contact']
+    },
+    plans: {
+      text: "<strong>We offer three rental terms:</strong><br/><br/>• <strong>Monthly</strong>, flexible, no commitment<br/>• <strong>Seasonal (3 months)</strong>, locked in placement for 90 days<br/>• <strong>Annual (12 months)</strong>, best value, with free message changes built in<br/><br/>Every plan includes delivery, installation, setback compliant placement, standard letter track messages, and pickup. For pricing tailored to your campaign, please <a href='#contact' style='color:var(--midnight); border-bottom:1px solid var(--gold);'>request a quote</a>.",
+      options: ['permit', 'area', 'process', 'contact']
+    },
+    permit: {
+      text: "<strong>Yes, a permit is required</strong> for every portable sign placed in Lloydminster, and we file it for you. The City's Development Services department reviews applications in <strong>5 to 10 business days</strong>, and each permit is renewable. Setback rules: 1.5 m from property line, 3 m from driveways, 5 m from corners, and we do the measuring.",
+      options: ['plans', 'area', 'process', 'back']
+    },
+    area: {
+      text: "We're locally owned in Lloydminster and serve the entire city on both the <strong>Alberta and Saskatchewan sides</strong>, plus surrounding communities within a <strong>30 km radius</strong>, including Marshall, Lashburn, Kitscoty, Marwayne, and the RM of Wilton.",
+      options: ['plans', 'process', 'contact', 'back']
+    },
+    size: {
+      text: "Every sign is a <strong>4 feet high by 8 feet wide</strong>, <strong>double sided</strong> unit, so your message is visible to traffic in both directions. Powder coated steel frame, weighted base, levelling feet, and sandbag ballast for prairie wind. Snow clearance friendly.",
+      options: ['plans', 'process', 'contact', 'back']
+    },
+    process: {
+      text: "<strong>Four simple steps:</strong><br/><br/>1. <strong>Tell us the message</strong>, a quick call or form<br/>2. <strong>We file &amp; design</strong>, permit + graphics (5 to 10 business days)<br/>3. <strong>We deliver &amp; plant</strong>, site assessed, levelled, ballasted<br/>4. <strong>It works</strong>, you focus on your business",
+      options: ['plans', 'permit', 'contact', 'back']
+    },
+    contact: {
+      text: "Ready to talk? Here's how to reach us:<br/><br/>📞 <strong>(780) 872.1609</strong><br/>✉️ <strong>brendankx99@yahoo.com</strong><br/>🏢 Lloydminster, AB/SK<br/><br/>Or fill out the quote form on this page, and we'll reply within 4 business hours.",
+      options: ['plans', 'process', 'back']
+    },
+    weather: {
+      text: "Every sign is ballasted with sandbags on a weighted steel base. When Environment Canada issues wind warnings above 80 km/h we proactively check signs and lay them down if needed. You're <strong>never liable</strong> for weather damage to our equipment.",
+      options: ['size', 'plans', 'back']
+    },
+    design: {
+      text: "Standard <strong>letter track messages</strong> (black letters on white) are included. For a premium look we design <strong>full colour vinyl panels</strong>, proofed before print, coordinated with our local print partner. You can also supply your own artwork.",
+      options: ['plans', 'contact', 'back']
+    },
+    nonprofit: {
+      text: "Yes. We offer discounted rates for registered nonprofits, churches, sports leagues, and community organizations. Just mention it when you get in touch.",
+      options: ['plans', 'contact', 'back']
+    },
+    back: { isBack: true },
+    default: {
+      text: "I'm a simple info bot, so I can answer from a fixed list of topics. Try one of these, or click 'Send us a message' below for a real human.",
+      options: ['plans', 'permit', 'area', 'size', 'process', 'contact']
+    }
+  };
+
+  const OPTION_LABELS = {
+    plans: '📋 Rental plans',
+    permit: '🏛️ Do I need a permit?',
+    area: '📍 Service area',
+    size: '📐 Sign size and build',
+    process: '⚙️ How it works',
+    contact: '📞 Contact info',
+    weather: '🌬️ Wind and weather',
+    design: '🎨 Graphic design',
+    nonprofit: '❤️ Nonprofit rates',
+    back: '← Back to start'
+  };
+
+  function addMsg(text, who = 'bot') {
+    const div = document.createElement('div');
+    div.className = 'chat-msg ' + who;
+    div.innerHTML = text;
+    chatBody.appendChild(div);
+    chatBody.scrollTop = chatBody.scrollHeight;
+    return div;
+  }
+
+  function addOptions(keys) {
+    const wrap = document.createElement('div');
+    wrap.className = 'chat-options';
+    keys.forEach(k => {
+      const btn = document.createElement('button');
+      btn.className = 'chat-option';
+      btn.textContent = OPTION_LABELS[k] || k;
+      btn.dataset.key = k;
+      btn.addEventListener('click', () => handleOption(k, btn.textContent));
+      wrap.appendChild(btn);
+    });
+    chatBody.appendChild(wrap);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function clearOptions() {
+    chatBody.querySelectorAll('.chat-options').forEach(el => el.remove());
+  }
+
+  function handleOption(key, label) {
+    clearOptions();
+    addMsg(label, 'user');
+    const entry = KB[key];
+    if (!entry) return showEntry('default');
+    if (entry.isBack) return showEntry('welcome');
+    setTimeout(() => showEntry(key), 420);
+  }
+
+  function showEntry(key) {
+    const entry = KB[key];
+    if (!entry) return;
+    addMsg(entry.text, 'bot');
+    if (entry.options && entry.options.length) {
+      setTimeout(() => addOptions(entry.options), 150);
+    }
+  }
+
+  let chatInitialized = false;
+  function openChat() {
+    chatWindow.classList.add('open');
+    chatLauncher.classList.add('hidden');
+    if (!chatInitialized) {
+      showEntry('welcome');
+      chatInitialized = true;
+    }
+  }
+
+  function closeChat() {
+    chatWindow.classList.remove('open');
+    chatLauncher.classList.remove('hidden');
+  }
+
+  chatLauncher.addEventListener('click', openChat);
+  chatClose.addEventListener('click', closeChat);
+  document.getElementById('chatContactLink').addEventListener('click', () => {
+    closeChat();
+  });
+</script>
+
+</body>
+</html>
