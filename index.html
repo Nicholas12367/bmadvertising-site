@@ -385,6 +385,7 @@
 
   .marquee-track span { display: inline-flex; align-items: center; gap: 80px; }
   .marquee-track span::after { content: '✦'; color: var(--gold); }
+  .marquee-track .tag { font-style: italic; color: var(--gold); }
 
   @keyframes scroll {
     0%   { transform: translateX(0); }
@@ -1039,6 +1040,15 @@
     margin-top: 4px;
   }
 
+  .footer-tagline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gold);
+    margin-bottom: 18px;
+    line-height: 1.3;
+  }
+
   .footer-about { font-size: 14px; line-height: 1.6; max-width: 320px; margin-bottom: 20px; }
 
   .footer h4 {
@@ -1429,12 +1439,14 @@
     <span>Hiring Campaigns</span>
     <span>Dealership Specials</span>
     <span>Community Events</span>
+    <span class="tag">We&rsquo;ve got a sign for that.</span>
     <span>Grand Openings</span>
     <span>Real Estate</span>
     <span>Seasonal Promotions</span>
     <span>Hiring Campaigns</span>
     <span>Dealership Specials</span>
     <span>Community Events</span>
+    <span class="tag">We&rsquo;ve got a sign for that.</span>
   </div>
 </div>
 
@@ -1818,13 +1830,14 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="logo.png" alt="B&amp;M Signs and Advertising" />
+          <img src="logo.png" alt="B&amp;M Signs and Advertising" width="56" height="56" />
           <span>
             <span class="top">B&amp;M</span><br/>
             <span class="bottom">Signs &amp; Advertising</span>
           </span>
         </div>
-        <p class="footer-about">Portable 4×8 steel frame sign rentals across Lloydminster and the surrounding region. Locally owned. Bylaw compliant. Reliably seen.</p>
+        <p class="footer-tagline">We&rsquo;ve got a sign for that.</p>
+        <p class="footer-about">Portable 4×8 steel frame sign rentals across Lloydminster and the surrounding towns. Locally owned. Bylaw compliant. Reliably seen.</p>
         <p class="footer-about" style="color:var(--gold); font-size:12px; letter-spacing:0.15em; text-transform:uppercase;">Licensed · Insured · Locally owned in Lloyd</p>
       </div>
       <div>
